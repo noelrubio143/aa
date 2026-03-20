@@ -27,7 +27,7 @@ show_vps_info() {
     fi
 
     echo -e "\e[1;33m -------------------------------------------------\e[0m"
-    echo -e "\e[1;34m                     SENSI VIP AIO                    \e[0m"
+    echo -e "\e[1;34m                      VIP AIO                    \e[0m"
     echo -e "\e[1;33m -------------------------------------------------\e[0m"
     echo -e "\e[1;32m OS            \e[0m: $(hostnamectl | grep "Operating System" | cut -d ' ' -f5-)"
     echo -e "\e[1;32m Uptime        \e[0m: $uptime"
@@ -43,7 +43,7 @@ show_cpu_ram_info() {
     get_ram_info
     get_cpu_usage
 
-    echo -e "\e[1;34m                   SENSI CPU/RAM INFO                  \e[0m"
+    echo -e "\e[1;34m                    CPU/RAM INFO                  \e[0m"
     echo -e "\e[1;33m -------------------------------------------------\e[0m"
     echo -e "\e[1;32m CPU USAGE   \e[0m: $cpu_usage"
     echo -e "\e[1;32m RAM USED    \e[0m: ${uram} MB"
@@ -57,7 +57,7 @@ show_menu() {
     show_vps_info
     show_cpu_ram_info
 
-    echo -e "\e[1;34m                      SENSI MENU                       \e[0m"
+    echo -e "\e[1;34m                       MENU                       \e[0m"
     echo -e "\e[1;33m -------------------------------------------------\e[0m"
     echo -e ""
     echo -e "\e[1;36m 1 \e[0m: Menu SSH"
@@ -74,8 +74,8 @@ show_menu() {
     echo -e "\e[1;33m -------------------------------------------------\e[0m"
     echo -e "\e[1;32m Client Name \e[0m: $Name"
     echo -e "\e[1;32m Expired     \e[0m: $Exp2"
-    echo -e "\e[1;32m SCRIPT BY   \e[0m: JUBAIR BRO"
-    echo -e "\e[1;32m Telegram    \e[0m: https://t.me/JubairFF"
+    echo -e "\e[1;32m SCRIPT BY   \e[0m: AMBERVPN"
+    echo -e "\e[1;32m Telegram Group   \e[0m: https://t.me/ambervpngc"
     echo -e "\e[1;33m -------------------------------------------------\e[0m"
     echo -e ""
     read -p " Select menu :  " opt
@@ -98,7 +98,7 @@ show_menu() {
 # Initial setup
 domain=$(cat /etc/xray/domain)
 Exp2="LIFETIME"
-Name="JUBAIR BRO"
+Name="AMBERVPN"
 
 # Main loop to display menu continuously
 while true; do
