@@ -15,7 +15,7 @@ publicIP=$(ip -4 addr | sed -ne 's|^.* inet \([^/]*\)/.* scope global.*$|\1|p' |
 
 function header() {
 	echo -e $GREEN" $VERSIONNAME$VERSIONNUMBER" $NOCOLOR
-	echo -e $WHITE" by JUBAIR BRO" $NOCOLOR
+	echo -e $WHITE" by AMBERVPN" $NOCOLOR
 }
 
 function isRoot() {
