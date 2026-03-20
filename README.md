@@ -7,3 +7,14 @@ apt update && apt upgrade -y && reboot
 ```
 sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.disable_ipv6=1 && apt update && apt install -y bzip2 gzip coreutils screen curl unzip && wget https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/setup1.sh && chmod +x setup1.sh && sed -i -e 's/\r$//' setup1.sh && screen -S setup ./setup1.sh
 ```
+
+
+
+
+# install NT udp-custom + NT slowdns + NT OpenVPN
+- (NOTE) Slowdns limit speed
+- Upload : 3 Mbps
+- Download : 3 Mbps
+```
+apt update && apt install wget -y && wget -qO- -O udp.sh "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/udp-custom/udp.sh" && chmod +x udp.sh && ./udp.sh
+```
