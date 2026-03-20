@@ -16,7 +16,7 @@ apt -y install squid3
 sleep 1
 echo "\e[1;32m Proses Download squid.. \e[0m"
 apt -y install squid
-wget -O /etc/squid/squid.conf "https://raw.githubusercontent.com/jubairbro/AUTO-SCRIPT/master/udp-custom/openvpn/squid3.conf"
+wget -O /etc/squid/squid.conf "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/udp-custom/openvpn/squid3.conf"
 sed -i $MYIP2 /etc/squid/squid.conf
 
 # // OpenVPN
@@ -53,19 +53,7 @@ echo -e "[ ${BGreen}ok${NC} ] Restarting vnstat "
 clear
 echo ""
 echo "=================================================================="  | tee -a log-install.txt
-echo "      ___                                    ___         ___      "  | tee -a log-install.txt
-echo "     /  /\        ___           ___         /  /\       /__/\     "  | tee -a log-install.txt
-echo "    /  /:/_      /  /\         /__/\       /  /::\      \  \:\    "  | tee -a log-install.txt
-echo "   /  /:/ /\    /  /:/         \  \:\     /  /:/\:\      \  \:\   "  | tee -a log-install.txt
-echo "  /  /:/_/::\  /__/::\          \  \:\   /  /:/~/:/  _____\__\:\  "  | tee -a log-install.txt
-echo " /__/:/__\/\:\ \__\/\:\__   ___  \__\:\ /__/:/ /:/  /__/::::::::\ "  | tee -a log-install.txt
-echo " \  \:\ /~~/:/    \  \:\/\ /__/\ |  |:| \  \:\/:/   \  \:\~~\~~\/ "  | tee -a log-install.txt
-echo "  \  \:\  /:/      \__\::/ \  \:\|  |:|  \  \::/     \  \:\  ~~~  "  | tee -a log-install.txt
-echo "   \  \:\/:/       /__/:/   \  \:\__|:|   \  \:\      \  \:\      "  | tee -a log-install.txt
-echo "    \  \::/        \__\/     \__\::::/     \  \:\      \  \:\     "  | tee -a log-install.txt
-echo "     \__\/                       ~~~~       \__\/       \__\/ 1.0 "  | tee -a log-install.txt
-echo "=================================================================="  | tee -a log-install.txt
-echo ""
+echo "    AMBER LANG SAKALAM "  | tee -a log-install.txt
 echo "   >>> Service & Port"  | tee -a log-install.txt
 echo "   - OpenSSH                  : 22"  | tee -a log-install.txt
 echo "   - OpenVPN                  : 1194"  | tee -a log-install.txt
