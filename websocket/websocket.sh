@@ -2,7 +2,7 @@
 # =========================================
 # Quick Setup | Script Setup Manager
 # Edition : Stable Edition 1.0
-# Auther  : Jubair bro 
+# Auther  : AMBER VPN 
 # (C) Copyright 2025
 # =========================================
 clear
@@ -13,7 +13,7 @@ sleep 2
 cd
 
 # // GIT USER
-GitUser="jubairbro"
+GitUser="ambervpn"
 
 # // SYSTEM WEBSOCKET HTTPS 443
 cat <<EOF> /etc/systemd/system/ws-https.service
