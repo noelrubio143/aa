@@ -46,7 +46,7 @@ echo "2. Choose Your Own Domain"
 read -rp "Input 1 or 2: " dns
 if [ "$dns" -eq 1 ]; then
     # Download cf script and convert line endings
-    wget https://raw.githubusercontent.com/jubairbro/AUTO-SCRIPT/master/ssh/cf
+    wget https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/ssh/cf
     dos2unix cf
     bash cf
 elif [ "$dns" -eq 2 ]; then
@@ -63,15 +63,15 @@ else
 fi
 
 # Install services
-wget -q https://raw.githubusercontent.com/jubairbro/AUTO-SCRIPT/master/ssh/ssh-vpn.sh
+wget -q https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/ssh/ssh-vpn.sh
 dos2unix ssh-vpn.sh
 bash ssh-vpn.sh
 
-wget -q https://raw.githubusercontent.com/jubairbro/AUTO-SCRIPT/master/xray/ins-xray.sh
+wget -q https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/xray/ins-xray.sh
 dos2unix ins-xray.sh
 bash ins-xray.sh
 
-wget -q https://raw.githubusercontent.com/jubairbro/AUTO-SCRIPT/master/sshws/insshws.sh
+wget -q https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/sshws/insshws.sh
 dos2unix insshws.sh
 bash insshws.sh
 
@@ -87,10 +87,7 @@ echo "IP=" >> /var/lib/ipvps.conf
 # Installation summary
 echo "===================================="
 echo " _   _ _______     ______  _   _ "
-echo "| \ | |_   _\ \   / /  _ \| \ | |"
-echo "|  \| | | |  \ \ / /| |_) |  \| |"
-echo "| |\  | | |   \ V / |  __/| |\  |"
-echo "|_| \_| |_|    \_/  |_|   |_| \_|"
+echo "AMBER VPN LANG SAKALAM"
 echo "===================================="        
 echo "Services and Ports:"
 echo " - OpenSSH: 22"
@@ -113,7 +110,7 @@ echo " - Vless gRPC: 443"
 echo " - Trojan gRPC: 443"
 echo " - Shadowsocks gRPC: 443"
 echo "=================================================================="
-echo "Contact: https://t.me/JubairFF"
+echo "Contact: https://t.me/ambervpngc"
 echo "=================================================================="
 
 # Additional commands
