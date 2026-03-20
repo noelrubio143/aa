@@ -194,7 +194,7 @@ kernelku=$(uname -r)
 
 # DNS PATCH
 #tipeos2=$(uname -m)
-Name=$"JUBAIR BRO "
+Name=$"AMBER VPN "
 Exp=$"LIFETIME FREE"
 # GETTING DOMAIN NAME
 Domen="$(cat /etc/xray/domain)"
@@ -231,7 +231,7 @@ echo -e "\e[1;32m Shadowsocks          \e[0m: $status_shadowsocks"
 echo -e "\e[1;32m Websocket TLS        \e[0m: $swstls"
 echo -e "\e[1;32m Websocket None TLS   \e[0m: $swstls"
 echo -e "\e[1;33m -------------------------------------------------\e[0m"
-echo -e "\e[1;34m                     t.me/JubairFF                   \e[0m"
+echo -e "\e[1;34m                  https://t.me/ambervpngc                 \e[0m"
 echo -e "\e[1;33m -------------------------------------------------\e[0m"
 echo ""
 read -n 1 -s -r -p "Press any key to back on menu"
