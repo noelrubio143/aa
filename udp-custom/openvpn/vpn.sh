@@ -90,7 +90,7 @@ client
 dev tun
 proto tcp
 setenv CLIENT_CERT 0
-remote $domain 443
+remote $domain 442
 resolv-retry infinite
 route-method exe
 nobind
