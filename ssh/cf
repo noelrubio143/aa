@@ -12,7 +12,7 @@ function error_exit {
 
 # Constants and variables
 DOMAIN="amberss.site"
-SUB_DOMAIN="my.$(head /dev/urandom | tr -dc a-z0-9 | head -c 5)amberss.site"
+SUB_DOMAIN="my.$(head /dev/urandom | tr -dc a-z0-9 | head -c 5).amberss.site"
 CF_ID="noelrubios1201@gmail.com"
 CF_KEY="6a8130e2bdcfbb2f2603b21a33fa10fe"  # Update with your API token
 IP=$(curl -s ipinfo.io/ip)
