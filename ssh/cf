@@ -13,11 +13,11 @@ function error_exit {
 # Constants and variables
 DOMAIN="nt-vps.com"
 SUB_DOMAIN="NT-$(head /dev/urandom | tr -dc a-z0-9 | head -c 5).vipssh.online"
-CF_ID="foodv776@gmail.com"
-CF_KEY="ed22c2673b2e8ee27c776db85e6546f4a510c"  # Update with your API token
+CF_ID="noelrubios1201@gmail.com"
+CF_KEY="6a8130e2bdcfbb2f2603b21a33fa10fe"  # Update with your API token
 IP=$(curl -s ipinfo.io/ip)
 API_URL="https://api.cloudflare.com/client/v4"
-ZONE_ID="195c976c61503b6d1d6cf1fec47edf0a"  # Update with your zone ID
+ZONE_ID="2ca2db84eb5bc65a20bf4330fa473e9c"  # Update with your zone ID
 
 # Function to update DNS record in Cloudflare
 function update_dns_record {
