@@ -8,7 +8,6 @@
 BGreen='\e[1;32m'
 NC='\e[0m'
 cd
-rm -rf slowdns.sh
 rm -rf udp.sh
 rm -rf vpn.sh
 rm -rf openvpn.sh
@@ -111,7 +110,6 @@ sleep 0,5
 clear
 cd
 rm -rf udp.sh
-rm -rf slowdns.sh
 echo -e "\e[1;32m auto reboot in 5s \e[0m"
 sleep 5
 reboot
