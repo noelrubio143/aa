@@ -67,10 +67,6 @@ wget -q https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/ssh/ss
 dos2unix ssh-vpn.sh
 bash ssh-vpn.sh
 
-wget -q https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/xray/ins-xray.sh
-dos2unix ins-xray.sh
-bash ins-xray.sh
-
 wget -q https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/sshws/insshws.sh
 dos2unix insshws.sh
 bash insshws.sh
@@ -122,7 +118,7 @@ bash <(curl -Ls https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/mai
 sudo systemctl start dropbear
 sudo systemctl enable dropbear
 # Cleanup and reboot
-rm -f /root/setup.sh /root/ins-xray.sh /root/insshws.sh cf ssh-vpn.sh ins-xray.sh insshws.sh
+rm -f /root/setup.sh /root/ins-xray.sh /root/insshws.sh cf ssh-vpn.sh insshws.sh
 echo "Auto reboot in 40 seconds..."
 sleep 40
 
