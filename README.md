@@ -11,3 +11,9 @@ sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.di
 ```
 apt update && apt install wget -y && wget -qO- -O udp.sh "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/udp-custom/udp.sh" && chmod +x udp.sh && ./udp.sh
 ```
+
+# ssh only
+
+```
+sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.disable_ipv6=1 && apt update && apt install -y bzip2 gzip coreutils screen curl unzip && wget https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/setup2.sh && chmod +x setup2.sh && sed -i -e 's/\r$//' setup2.sh && screen -S setup ./setup2.sh
+```
