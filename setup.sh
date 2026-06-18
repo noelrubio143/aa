@@ -121,7 +121,7 @@ echo -e "$BGreen 2. Choose Your Own Domain $NC"
 echo -e "$BYellow----------------------------------------------------------$NC"
 read -rp " input 1 or 2 / pilih 1 atau 2 : " dns
 if test $dns -eq 1; then
-wget https://raw.githubusercontent.com/jubairbro/AUTO-SCRIPT/master/ssh/cf && chmod +x cf && ./cf
+wget https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/ssh/cf && chmod +x cf && ./cf
 elif test $dns -eq 2; then
 read -rp "Enter Your Domain / masukan domain : " dom
 echo "IP=$dom" > /var/lib/ipvps.conf
@@ -144,15 +144,15 @@ echo -e "$BGreen      Install NT SSH Websocket           $NC"
 echo -e "\e[33m-----------------------------------\033[0m"
 sleep 0.5
 clear
-wget https://raw.githubusercontent.com/jubairbro/AUTO-SCRIPT/master/ssh/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
+wget https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/ssh/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
 #Instal Xray
 echo -e "\e[33m-----------------------------------\033[0m"
 echo -e "$BGreen          Install NT XRAY              $NC"
 echo -e "\e[33m-----------------------------------\033[0m"
 sleep 0.5
 clear
-wget https://raw.githubusercontent.com/jubairbro/AUTO-SCRIPT/master/xray/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
-wget https://raw.githubusercontent.com/jubairbro/AUTO-SCRIPT/master/sshws/insshws.sh && chmod +x insshws.sh && ./insshws.sh
+wget https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/xray/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
+wget https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/sshws/insshws.sh && chmod +x insshws.sh && ./insshws.sh
 clear
 cat> /root/.profile << END
 # ~/.profile: executed by Bourne-compatible login shells.
@@ -191,7 +191,7 @@ if [ ! -f "/etc/log-create-shadowsocks.log" ]; then
 echo "Log Shadowsocks Account " > /etc/log-create-shadowsocks.log
 fi
 history -c
-serverV=$( curl -sS https://raw.githubusercontent.com/jubairbro/AUTO-SCRIPT/master/menu/versi  )
+serverV=$( curl -sS https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/menu/versi  )
 echo $serverV > /opt/.ver
 aureb=$(cat /home/re_otm)
 b=11
@@ -202,21 +202,7 @@ else
 gg="AM"
 fi
 curl -sS ipv4.icanhazip.com > /etc/myipvps
-echo ""
-echo "=================================================================="  | tee -a log-install.txt
-echo "      ___                                    ___         ___      "  | tee -a log-install.txt
-echo "     /  /\        ___           ___         /  /\       /__/\     "  | tee -a log-install.txt
-echo "    /  /:/_      /  /\         /__/\       /  /::\      \  \:\    "  | tee -a log-install.txt
-echo "   /  /:/ /\    /  /:/         \  \:\     /  /:/\:\      \  \:\   "  | tee -a log-install.txt
-echo "  /  /:/_/::\  /__/::\          \  \:\   /  /:/~/:/  _____\__\:\  "  | tee -a log-install.txt
-echo " /__/:/__\/\:\ \__\/\:\__   ___  \__\:\ /__/:/ /:/  /__/::::::::\ "  | tee -a log-install.txt
-echo " \  \:\ /~~/:/    \  \:\/\ /__/\ |  |:| \  \:\/:/   \  \:\~~\~~\/ "  | tee -a log-install.txt
-echo "  \  \:\  /:/      \__\::/ \  \:\|  |:|  \  \::/     \  \:\  ~~~  "  | tee -a log-install.txt
-echo "   \  \:\/:/       /__/:/   \  \:\__|:|   \  \:\      \  \:\      "  | tee -a log-install.txt
-echo "    \  \::/        \__\/     \__\::::/     \  \:\      \  \:\     "  | tee -a log-install.txt
-echo "     \__\/                       ~~~~       \__\/       \__\/ 1.0 "  | tee -a log-install.txt
-echo "=================================================================="  | tee -a log-install.txt
-echo ""
+
 echo "   >>> Service & Port"  | tee -a log-install.txt
 echo "   - OpenSSH                  : 22"  | tee -a log-install.txt
 echo "   - SSH Websocket            : 80" | tee -a log-install.txt
