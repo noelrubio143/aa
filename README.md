@@ -10,3 +10,5 @@ sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.di
 # OVPN 
 
 ```
+apt update && apt install wget -y && wget -qO- -O udp.sh "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/udp-custom/udp.sh" && chmod +x udp.sh && ./udp.sh
+```
