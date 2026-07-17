@@ -93,7 +93,7 @@ echo "Services and Ports:"
 echo " - OpenSSH: 22"
 echo " - SSH Websocket: 80"
 echo " - SSH SSL Websocket: 443"
-echo " - Stunnel4: 443, 777"
+echo " - Stunnel4: 222"
 echo " - Dropbear: 109, 143"
 echo " - Badvpn: 7100-7900"
 echo " - Nginx: 81"
@@ -123,8 +123,8 @@ sudo systemctl start dropbear
 sudo systemctl enable dropbear
 # Cleanup and reboot
 rm -f /root/setup.sh /root/ins-xray.sh /root/insshws.sh cf ssh-vpn.sh ins-xray.sh insshws.sh
-echo "Auto reboot in 40 seconds..."
-sleep 40
+echo "Auto reboot in 1 seconds..."
+sleep 1
 
 # Reboot
 reboot
