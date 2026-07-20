@@ -1,4 +1,4 @@
-# [Step Install]
+#[Step Install]
 - Step 1 for (debian) please update first
 ```
 apt update && apt upgrade -y && reboot
@@ -9,11 +9,11 @@ sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.di
 ```
 **SLIPSTREAM:**
 ```
-curl -sSL https://raw.githubusercontent.com/noelrubio143/sliptream/refs/heads/main/slipstream-rust-deploy.sh -o /tmp/stunnel-menu.sh && sudo mv /tmp/stunnel-menu.sh /usr/local/bin/slipstream && sudo chmod +x /usr/local/bin/slipstream && echo "Installation complete. Type 'slipstream' to open the SSH + Stunnel menu."
+curl -sSL https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/slipstream-rust-deploy.sh -o /tmp/stunnel-menu.sh && sudo mv /tmp/stunnel-menu.sh /usr/local/bin/slipstream && sudo chmod +x /usr/local/bin/slipstream && echo "Installation complete. Type 'slipstream' to open the SSH + Stunnel menu."
 ```
-# UNINSTALL SLIPSTREAM
+#UNINSTALL SLIPSTREAM
 ```
-bash <(curl -Ls https://raw.githubusercontent.com/noelrubio143/sliptream/refs/heads/main/slipstream-rust-deploy.sh) uninstall
+bash <(curl -Ls https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/slipstream-rust-deploy.sh) uninstall
 ```
 #DNSTT
 ```
