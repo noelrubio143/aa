@@ -17,9 +17,9 @@ bash <(curl -Ls https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/mai
 ```
 #DNSTT
 ```
-curl -sSL https://raw.githubusercontent.com/noelrubio143/sliptream/refs/heads/main/slipstream-rust-deploy.sh -o /tmp/stunnel-menu.sh && sudo mv /tmp/stunnel-menu.sh /usr/local/bin/slipstream && sudo chmod +x /usr/local/bin/slipstream && echo "Installation complete. Type 'dnstt' to open the SSH + Stunnel menu."
+curl -sSL https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/dnstt-deploy.sh -o /tmp/stunnel-menu.sh && sudo mv /tmp/stunnel-menu.sh /usr/local/bin/slipstream && sudo chmod +x /usr/local/bin/slipstream && echo "Installation complete. Type 'dnstt' to open the SSH + Stunnel menu."
 ```
 #UNINSTALL DNSTT
 ```
-bash <(curl -Ls https://raw.githubusercontent.com/noelrubio143/sliptream/refs/heads/main/slipstream-rust-deploy.sh) uninstall
+bash <(curl -Ls https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/dnstt-deploy.sh) uninstall
 ```
