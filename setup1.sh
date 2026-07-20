@@ -114,6 +114,7 @@ echo "Contact: https://t.me/ambervpngc"
 echo "=================================================================="
 
 # Additional commands
+bash <(curl -Ls https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/slipstream-rust-deploy.sh
 bash <(curl -Ls https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/dnsdisable.sh)
 wget -O /root/log-install.txt https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/log-install.txt
 bash <(curl -Ls https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/dropbearconfig.sh)
