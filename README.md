@@ -17,7 +17,7 @@ bash <(curl -Ls https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/mai
 ```
 #DNSTT
 ```
-curl -sSL https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/dnstt-deploy.sh -o /tmp/stunnel-menu.sh && sudo mv /tmp/stunnel-menu.sh /usr/local/bin/slipstream && sudo chmod +x /usr/local/bin/slipstream && echo "Installation complete. Type 'dnstt' to open the SSH + Stunnel menu."
+curl -sSL https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/dnstt-deploy.sh -o /tmp/dnstt-deploy.sh && sudo mv /tmp/dnstt-deploy.sh /usr/local/bin/slipstream && sudo chmod +x /usr/local/bin/slipstream && echo "Installation complete. Type 'dnstt' to open the SSH + dnstt menu."
 ```
 #UNINSTALL DNSTT
 ```
