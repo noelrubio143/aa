@@ -15,11 +15,3 @@ curl -sSL https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/slip
 ```
 bash <(curl -Ls https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/slipstream-rust-deploy.sh) uninstall
 ```
-#DNSTT
-```
-curl -sSL https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/dnstt-deploy.sh -o /tmp/dnstt-deploy.sh && sudo mv /tmp/dnstt-deploy.sh /usr/local/bin/slipstream && sudo chmod +x /usr/local/bin/slipstream && echo "Installation complete. Type 'dnstt' to open the SSH + dnstt menu."
-```
-#UNINSTALL DNSTT
-```
-bash <(curl -Ls https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/dnstt-deploy.sh) uninstall
-```
