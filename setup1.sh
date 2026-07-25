@@ -42,8 +42,8 @@ fi
 
 # Domain configuration
 echo "1. Choose Your Own Domain"
-read -rp "Input 1: " dns
-elif [ "$dns" -eq 1 ]; then
+read -rp "Input 2: " dns
+elif [ "$dns" -eq 2 ]; then
     read -rp "Enter Your Domain: " dom
     echo "$dom" > /var/lib/ipvps.conf
     echo "$dom" > /root/scdomain
