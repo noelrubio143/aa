@@ -41,8 +41,14 @@ if ! python --version 2>&1 | grep -q "Python 2.7"; then
 fi
 
 # Domain configuration
-echo "1. Choose Your Own Domain"
-read -rp "Input 2: " dns
+echo "1. Use Our NT Domain Random"
+echo "2. Choose Your Own Domain"
+read -rp "Input 1 or 2: " dns
+if [ "$dns" -eq 1 ]; then
+    # Download cf script and convert line endings
+    wget https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/ssh/cf
+    dos2unix cf
+    bash cf
 elif [ "$dns" -eq 2 ]; then
     read -rp "Enter Your Domain: " dom
     echo "$dom" > /var/lib/ipvps.conf
