@@ -85,11 +85,10 @@ show_menu() {
     2) clear ; m-vmess ;;
     3) clear ; m-vless ;;
     4) clear ; m-trojan ;;
-    5) clear ; m-ssws ;;
-    6) clear ; m-system ;;
-    7) clear ; running ;;
-    8) clear ; clearcache ;;
-    9) clear ; /sbin/reboot ;;
+    5) clear ; m-system ;;
+    6) clear ; running ;;
+    7) clear ; clearcache ;;
+    8) clear ; /sbin/reboot ;;
     x) exit ;;
     *) echo "Invalid selection" ; sleep 1 ;;
     esac
