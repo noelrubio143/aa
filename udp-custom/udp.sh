@@ -8,7 +8,6 @@
 BGreen='\e[1;32m'
 NC='\e[0m'
 cd
-rm -rf slowdns.sh
 rm -rf udp.sh
 rm -rf vpn.sh
 rm -rf openvpn.sh
