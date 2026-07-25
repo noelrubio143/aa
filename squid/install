@@ -1,0 +1,103 @@
+#!/bin/bash
+
+# Function to add color
+function print_color {
+  COLOR=$1
+  MESSAGE=$2
+  NC='\033[0m' # No Color
+  case $COLOR in
+    "red")
+      echo -e "\033[0;31m${MESSAGE}${NC}"
+      ;;
+    "green")
+      echo -e "\033[0;32m${MESSAGE}${NC}"
+      ;;
+    "yellow")
+      echo -e "\033[0;33m${MESSAGE}${NC}"
+      ;;
+    "blue")
+      echo -e "\033[0;34m${MESSAGE}${NC}"
+      ;;
+    *)
+      echo "${MESSAGE}"
+      ;;
+  esac
+}
+
+# Default Squid port
+SQUID_PORT=8080
+
+# Parse custom port from command line arguments
+while getopts p: flag
+do
+    case "${flag}" in
+        p) SQUID_PORT=${OPTARG};;
+    esac
+done
+
+# Update the package list
+print_color "blue" "Updating the package list..."
+sudo apt update
+
+# Install SSH server
+print_color "blue" "Installing SSH server..."
+sudo apt install -y openssh-server
+
+# Enable and start SSH service
+print_color "blue" "Enabling and starting SSH service..."
+sudo systemctl enable ssh
+sudo systemctl start ssh
+
+# Install Squid
+print_color "blue" "Installing Squid..."
+sudo apt install -y squid
+
+# Backup the original Squid configuration file
+print_color "blue" "Backing up the original Squid configuration file..."
+sudo cp /etc/squid/squid.conf /etc/squid/squid.conf.backup
+
+# Configure Squid to handle VPN connections by allowing all traffic (example configuration)
+print_color "blue" "Configuring Squid with custom port ${SQUID_PORT}..."
+sudo bash -c "cat > /etc/squid/squid.conf <<EOF
+# Squid configuration file
+
+# Define allowed ports
+acl SSL_ports port 443
+acl Safe_ports port 80      # http
+acl Safe_ports port 21      # ftp
+acl Safe_ports port 443     # https
+acl Safe_ports port 70      # gopher
+acl Safe_ports port 210     # wais
+acl Safe_ports port 1025-65535  # unregistered ports
+acl Safe_ports port 280     # http-mgmt
+acl Safe_ports port 488     # gss-http
+acl Safe_ports port 591     # filemaker
+acl Safe_ports port 777     # multiling http
+acl CONNECT method CONNECT
+
+# Allow all traffic (example configuration)
+http_access allow all
+
+# Squid listening port
+http_port ${SQUID_PORT}
+
+# DNS nameservers
+dns_nameservers 8.8.8.8 8.8.4.4
+
+# Log file locations
+access_log /var/log/squid/access.log
+cache_log /var/log/squid/cache.log
+EOF"
+
+# Enable and start Squid service
+print_color "blue" "Enabling and restarting Squid service..."
+sudo systemctl enable squid
+sudo systemctl restart squid
+
+# Print status of SSH and Squid services
+print_color "green" "SSH and Squid installation and configuration complete."
+print_color "yellow" "SSH service status:"
+sudo systemctl status ssh | grep Active
+
+print_color "yellow" "Squid service status:"
+sudo systemctl status squid | grep Active
