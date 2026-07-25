@@ -474,15 +474,6 @@ sed -i '$ igrpc_set_header Host \$http_host;' /etc/nginx/conf.d/xray.conf
 sed -i '$ igrpc_pass grpc://127.0.0.1:33456;' /etc/nginx/conf.d/xray.conf
 sed -i '$ i}' /etc/nginx/conf.d/xray.conf
 
-sed -i '$ ilocation ^~ /ss-grpc' /etc/nginx/conf.d/xray.conf
-sed -i '$ i{' /etc/nginx/conf.d/xray.conf
-sed -i '$ iproxy_redirect off;' /etc/nginx/conf.d/xray.conf
-sed -i '$ igrpc_set_header X-Real-IP \$remote_addr;' /etc/nginx/conf.d/xray.conf
-sed -i '$ igrpc_set_header X-Forwarded-For \$proxy_add_x_forwarded_for;' /etc/nginx/conf.d/xray.conf
-sed -i '$ igrpc_set_header Host \$http_host;' /etc/nginx/conf.d/xray.conf
-sed -i '$ igrpc_pass grpc://127.0.0.1:30310;' /etc/nginx/conf.d/xray.conf
-sed -i '$ i}' /etc/nginx/conf.d/xray.conf
-
 echo -e "$yell[SERVICE]$NC Restart All service"
 systemctl daemon-reload
 sleep 0.5
@@ -515,12 +506,6 @@ wget -O trialtrojan "https://raw.githubusercontent.com/noelrubio143/aa/refs/head
 wget -O del-tr "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/xray/del-tr.sh" && chmod +x del-tr
 wget -O renew-tr "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/xray/renew-tr.sh" && chmod +x renew-tr
 wget -O cek-tr "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/xray/cek-tr.sh" && chmod +x cek-tr
-
-# shadowsocks
-wget -O add-ssws "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/xray/add-ssws.sh" && chmod +x add-ssws
-wget -O trialssws "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/xray/trialssws.sh" && chmod +x trialssws
-wget -O del-ssws "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/xray/del-ssws.sh" && chmod +x del-ssws
-wget -O renew-ssws "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/xray/renew-ssws.sh" && chmod +x renew-ssws
 
 sleep 0.5
 yellow() { echo -e "\\033[33;1m${*}\\033[0m"; }
