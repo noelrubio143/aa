@@ -169,27 +169,7 @@ cat > /etc/xray/config.json << END
            {
            "method": "aes-128-gcm",
           "password": "${uuid}"
-#ssws
-           }
-          ],
-          "network": "tcp,udp"
-       },
-       "streamSettings":{
-          "network": "ws",
-             "wsSettings": {
-               "path": "/ss-ws"
-           }
-        }
-     },	
-      {
-        "listen": "127.0.0.1",
-     "port": "24456",
-        "protocol": "vless",
-        "settings": {
-         "decryption":"none",
-           "clients": [
-             {
-               "id": "${uuid}"
+
 #vlessgrpc
              }
           ]
@@ -250,90 +230,7 @@ cat > /etc/xray/config.json << END
           {
              "method": "aes-128-gcm",
              "password": "${uuid}"
-#ssgrpc
-           }
-         ],
-           "network": "tcp,udp"
-      },
-    "streamSettings":{
-     "network": "grpc",
-        "grpcSettings": {
-           "serviceName": "ss-grpc"
-          }
-       }
-    }	
-  ],
-  "outbounds": [
-    {
-      "protocol": "freedom",
-      "settings": {}
-    },
-    {
-      "protocol": "blackhole",
-      "settings": {},
-      "tag": "blocked"
-    }
-  ],
-  "routing": {
-    "rules": [
-      {
-        "type": "field",
-        "ip": [
-          "0.0.0.0/8",
-          "10.0.0.0/8",
-          "100.64.0.0/10",
-          "169.254.0.0/16",
-          "172.16.0.0/12",
-          "192.0.0.0/24",
-          "192.0.2.0/24",
-          "192.168.0.0/16",
-          "198.18.0.0/15",
-          "198.51.100.0/24",
-          "203.0.113.0/24",
-          "::1/128",
-          "fc00::/7",
-          "fe80::/10"
-        ],
-        "outboundTag": "blocked"
-      },
-      {
-        "inboundTag": [
-          "api"
-        ],
-        "outboundTag": "api",
-        "type": "field"
-      },
-      {
-        "type": "field",
-        "outboundTag": "blocked",
-        "protocol": [
-          "bittorrent"
-        ]
-      }
-    ]
-  },
-  "stats": {},
-  "api": {
-    "services": [
-      "StatsService"
-    ],
-    "tag": "api"
-  },
-  "policy": {
-    "levels": {
-      "0": {
-        "statsUserDownlink": true,
-        "statsUserUplink": true
-      }
-    },
-    "system": {
-      "statsInboundUplink": true,
-      "statsInboundDownlink": true,
-      "statsOutboundUplink" : true,
-      "statsOutboundDownlink" : true
-    }
-  }
-}
+             
 END
 rm -rf /etc/systemd/system/xray.service.d
 rm -rf /etc/systemd/system/xray@.service
