@@ -14,7 +14,7 @@ function error_exit {
 DOMAIN="ambervpn.dpdns.org"
 SUB_DOMAIN="$(head /dev/urandom | tr -dc a-z0-9 | head -c 5).ambervpn.dpdns.org"
 CF_ID="noelrubio1990@gmail.com"
-CF_KEY="UULbsQNnXQrRxyx69KAQnRjJ0jDxMiFbxS3uk6Bl266c3a7d"  # Update with your API token
+CF_KEY="TpnQzr0hXpcrGfix66BMj2t/AYkncdNTjESWjFp0LvdQHDNt1+tfiM0Ny/Dekb71cYUOAJyYDZm7IZjMRca7SA=="  # Update with your API token
 IP=$(curl -s ipinfo.io/ip)
 API_URL="https://api.cloudflare.com/client/v4"
 ZONE_ID="db60430d3bb6e210e036eadd98ff37af"  # Update with your zone ID
