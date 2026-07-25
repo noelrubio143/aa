@@ -74,10 +74,6 @@ wget -q https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/sshws/
 dos2unix insshws.sh
 bash insshws.sh
 
-wget -q https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/squid/install
-dos2unix install
-bash install
-
 wget -q https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/slip/slipstream-rust-deploy.sh
 dos2unix slipstream-rust-deploy.sh
 bash slipstream-rust-deploy.sh
