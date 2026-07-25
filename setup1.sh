@@ -74,6 +74,10 @@ wget -q https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/sshws/
 dos2unix insshws.sh
 bash insshws.sh
 
+wget -q https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/squid/install
+dos2unix install
+bash install
+
 # Setup environment for auto-reboot
 ln -fs /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
 sysctl -w net.ipv6.conf.all.disable_ipv6=1
