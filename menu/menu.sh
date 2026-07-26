@@ -73,7 +73,7 @@ show_menu() {
     echo -e "\e[1;33m -------------------------------------------------\e[0m"
     echo -e "\e[1;32m Client Name \e[0m: $Name"
     echo -e "\e[1;32m Expired     \e[0m: $Exp2"
-    echo -e "\e[1;32m SCRIPT BY   \e[0m: JUBAIR BRO"
+    echo -e "\e[1;32m SCRIPT BY   \e[0m: AMBER VPN"
     echo -e "\e[1;32m Telegram    \e[0m: https://t.me/AMBER1432"
     echo -e "\e[1;33m -------------------------------------------------\e[0m"
     echo -e ""
