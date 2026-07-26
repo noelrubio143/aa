@@ -324,7 +324,7 @@ cd /usr/bin
 wget -O menu "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/menu/menu.sh"
 wget -O m-vless "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/menu/m-vless.sh"
 wget -O running "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/menu/running.sh"
-wget -O clearcache " https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main /menu/clearcache.sh"
+wget -O clearcache " https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/menu/clearcache.sh"
 
 # menu ssh ovpn
 wget -O m-sshovpn "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/menu/m-sshovpn.sh"
