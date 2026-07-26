@@ -63,10 +63,12 @@ show_menu() {
     echo -e "\e[1;36m 1 \e[0m: Menu SSH"
     echo -e "\e[1;36m 2 \e[0m: Menu Vmess"
     echo -e "\e[1;36m 3 \e[0m: Menu Vless"
-    echo -e "\e[1;36m 4 \e[0m: Menu Setting"
-    echo -e "\e[1;36m 5 \e[0m: Status Service"
-    echo -e "\e[1;36m 6 \e[0m: Clear RAM Cache"
-    echo -e "\e[1;36m 7 \e[0m: Reboot VPS"
+    echo -e "\e[1;36m 4 \e[0m: Menu Trojan"
+    echo -e "\e[1;36m 5 \e[0m: Menu Shadowsocks"
+    echo -e "\e[1;36m 6 \e[0m: Menu Setting"
+    echo -e "\e[1;36m 7 \e[0m: Status Service"
+    echo -e "\e[1;36m 8 \e[0m: Clear RAM Cache"
+    echo -e "\e[1;36m 9 \e[0m: Reboot VPS"
     echo -e "\e[1;36m x \e[0m: Exit Script"
     echo -e ""
     echo -e "\e[1;33m -------------------------------------------------\e[0m"
@@ -82,10 +84,12 @@ show_menu() {
     1) clear ; m-sshovpn ;;
     2) clear ; m-vmess ;;
     3) clear ; m-vless ;;
-    4) clear ; m-system ;;
-    5) clear ; running ;;
-    6) clear ; clearcache ;;
-    7) clear ; /sbin/reboot ;;
+    4) clear ; m-trojan ;;
+    5) clear ; m-ssws ;;
+    6) clear ; m-system ;;
+    7) clear ; running ;;
+    8) clear ; clearcache ;;
+    9) clear ; /sbin/reboot ;;
     x) exit ;;
     *) echo "Invalid selection" ; sleep 1 ;;
     esac
