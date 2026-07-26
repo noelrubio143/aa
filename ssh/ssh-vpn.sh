@@ -337,7 +337,6 @@ wget -O delete "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/mai
 wget -O autokill "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/ssh/autokill.sh"
 wget -O ceklim "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/ssh/ceklim.sh"
 wget -O tendang "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/ssh/tendang.sh"
-wget -O sshws "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/ssh/sshws.sh"
 wget -O user-lock "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/ssh/user-lock.sh"
 wget -O user-unlock "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/ssh/user-unlock.sh"
 
