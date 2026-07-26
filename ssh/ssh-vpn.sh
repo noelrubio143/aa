@@ -352,7 +352,6 @@ wget -O restart "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/ma
 wget -O bw "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/menu/bw.sh"
 wget -O m-tcp "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/menu/tcp.sh"
 wget -O xp "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/ssh/xp.sh"
-wget -O sshws "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/ssh/sshws.sh"
 wget -O m-dns "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/menu/m-dns.sh"
 
 chmod +x menu
