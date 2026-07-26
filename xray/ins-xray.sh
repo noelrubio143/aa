@@ -351,19 +351,19 @@ systemctl enable runn
 systemctl restart runn
 
 cd /usr/bin/
-# vless
-wget -O add-vless "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/xray/add-vless.sh" && chmod +x add-vless
-wget -O trialvless "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/xray/trialvless.sh" && chmod +x trialvless
-wget -O renew-vless "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/xray/renew-vless.sh" && chmod +x renew-vless
-wget -O del-vless "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/xray/del-vless.sh" && chmod +x del-vless
-wget -O cek-vless "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/xray/cek-vless.sh" && chmod +x cek-vless
-
 # vmess
 wget -O add-ws "https://raw.githubusercontent.com/ noelrubio143/aa/refs/heads/main /xray/add-ws.sh" && chmod +x add-ws
 wget -O trialvmess "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/xray/trialvmess.sh" && chmod +x trialvmess
 wget -O renew-ws "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/xray/renew-ws.sh" && chmod +x renew-ws
 wget -O del-ws "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/xray/del-ws.sh" && chmod +x del-ws
 wget -O cek-ws "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/xray/cek-ws.sh" && chmod +x cek-ws
+
+# vless
+wget -O add-vless "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/xray/add-vless.sh" && chmod +x add-vless
+wget -O trialvless "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/xray/trialvless.sh" && chmod +x trialvless
+wget -O renew-vless "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/xray/renew-vless.sh" && chmod +x renew-vless
+wget -O del-vless "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/xray/del-vless.sh" && chmod +x del-vless
+wget -O cek-vless "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/xray/cek-vless.sh" && chmod +x cek-vless
 
 sleep 0.5
 yellow() { echo -e "\\033[33;1m${*}\\033[0m"; }
