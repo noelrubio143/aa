@@ -328,18 +328,11 @@ wget -O clearcache "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads
 # menu ssh ovpn
 wget -O m-sshovpn "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/menu/m-sshovpn.sh"
 wget -O usernew "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/ssh/usernew.sh"
-wget -O trial "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/ssh/trial.sh"
 wget -O renew "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/ssh/renew.sh"
 wget -O hapus "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/ssh/hapus.sh"
-wget -O cek "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/ssh/cek.sh"
 wget -O member "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/ssh/member.sh"
 wget -O delete "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/ssh/delete.sh"
-wget -O autokill "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/ssh/autokill.sh"
-wget -O ceklim "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/ssh/ceklim.sh"
-wget -O tendang "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/ssh/tendang.sh"
 wget -O sshws "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/ssh/sshws.sh"
-wget -O user-lock "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/mainmaster/ssh/user-lock.sh"
-wget -O user-unlock "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/ssh/user-unlock.sh"
 
 # menu system
 wget -O m-system "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/menu/m-system.sh"
@@ -362,18 +355,11 @@ chmod +x clearcache
 
 chmod +x m-sshovpn
 chmod +x usernew
-chmod +x trial
 chmod +x renew
 chmod +x hapus
-chmod +x cek
 chmod +x member
 chmod +x delete
-chmod +x autokill
-chmod +x ceklim
-chmod +x tendang
 chmod +x sshws
-chmod +x user-lock
-chmod +x user-unlock
 
 chmod +x m-system
 chmod +x m-domain
