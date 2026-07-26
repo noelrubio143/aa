@@ -360,6 +360,7 @@ wget -O cek-vless "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/
 
 sleep 0.5
 yellow() { echo -e "\\033[33;1m${*}\\033[0m"; }
+yellow "xray/Vmess"
 yellow "xray/Vless"
 
 mv /root/domain /etc/xray/ 
