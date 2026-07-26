@@ -333,7 +333,6 @@ wget -O certv2ray "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/
 wget -O speedtest "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/ssh/speedtest_cli.py"
 wget -O auto-reboot "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/menu/auto-reboot.sh"
 wget -O restart "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/menu/restart.sh"
-wget -O bw "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/menu/bw.sh"
 wget -O m-tcp "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/menu/tcp.sh"
 wget -O xp "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/ssh/xp.sh"
 wget -O sshws "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/ssh/sshws.sh"
@@ -351,7 +350,6 @@ chmod +x certv2ray
 chmod +x speedtest
 chmod +x auto-reboot
 chmod +x restart
-chmod +x bw
 chmod +x m-tcp
 chmod +x xp
 chmod +x sshws
