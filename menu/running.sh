@@ -167,7 +167,7 @@ kernelku=$(uname -r)
 
 # DNS PATCH
 #tipeos2=$(uname -m)
-Name=$"JUBAIR BRO "
+Name=$"AMBER VPN"
 Exp=$"LIFETIME FREE"
 # GETTING DOMAIN NAME
 Domen="$(cat /etc/xray/domain)"
