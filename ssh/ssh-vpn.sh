@@ -325,15 +325,6 @@ wget -O m-vless "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/ma
 wget -O running "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/menu/running.sh"
 wget -O clearcache "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/menu/clearcache.sh"
 
-# menu ssh ovpn
-wget -O m-sshovpn "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/menu/m-sshovpn.sh"
-wget -O usernew "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/ssh/usernew.sh"
-wget -O renew "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/ssh/renew.sh"
-wget -O hapus "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/ssh/hapus.sh"
-wget -O member "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/ssh/member.sh"
-wget -O delete "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/ssh/delete.sh"
-wget -O sshws "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/ssh/sshws.sh"
-
 # menu system
 wget -O m-system "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/menu/m-system.sh"
 wget -O m-domain "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/menu/m-domain.sh"
@@ -352,14 +343,6 @@ chmod +x menu
 chmod +x m-vless
 chmod +x running
 chmod +x clearcache
-
-chmod +x m-sshovpn
-chmod +x usernew
-chmod +x renew
-chmod +x hapus
-chmod +x member
-chmod +x delete
-chmod +x sshws
 
 chmod +x m-system
 chmod +x m-domain
