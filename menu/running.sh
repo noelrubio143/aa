@@ -114,20 +114,6 @@ else
    status_fail2ban="${RED}  Not Running ${NC}  ( Error )"
 fi
 
-# STATUS SERVICE  TLS 
-if [[ $tls_v2ray_status == "running" ]]; then 
-   status_tls_v2ray=" ${GREEN}Running${NC} ( No Error )"
-else
-   status_tls_v2ray="${RED}  Not Running${NC}   ( Error )"
-fi
-
-# STATUS SERVICE NON TLS V2RAY
-if [[ $nontls_v2ray_status == "running" ]]; then 
-   status_nontls_v2ray=" ${GREEN}Running ${NC}( No Error )${NC}"
-else
-   status_nontls_v2ray="${RED}  Not Running ${NC}  ( Error )${NC}"
-fi
-
 # STATUS SERVICE VLESS HTTPS
 if [[ $vless_tls_v2ray_status == "running" ]]; then
   status_tls_vless=" ${GREEN}Running${NC} ( No Error )"
@@ -140,13 +126,6 @@ if [[ $vless_nontls_v2ray_status == "running" ]]; then
   status_nontls_vless=" ${GREEN}Running${NC} ( No Error )"
 else
   status_nontls_vless="${RED}  Not Running ${NC}  ( Error )${NC}"
-fi
-
-# STATUS SERVICE TROJAN
-if [[ $trojan_server == "running" ]]; then 
-   status_virus_trojan=" ${GREEN}Running ${NC}( No Error )${NC}"
-else
-   status_virus_trojan="${RED}  Not Running ${NC}  ( Error )${NC}"
 fi
 
 # STATUS SERVICE DROPBEAR
@@ -214,11 +193,8 @@ echo -e "\e[1;32m Stunnel4             \e[0m: $status_stunnel"
 echo -e "\e[1;32m Fail2Ban             \e[0m: $status_fail2ban"
 echo -e "\e[1;32m Crons                \e[0m: $status_cron"
 echo -e "\e[1;32m Vnstat               \e[0m: $status_vnstat"
-echo -e "\e[1;32m XRAYS Vmess TLS      \e[0m: $status_tls_v2ray"
-echo -e "\e[1;32m XRAYS Vmess None TLS \e[0m: $status_nontls_v2ray"
 echo -e "\e[1;32m XRAYS Vless TLS      \e[0m: $status_tls_vless"
 echo -e "\e[1;32m XRAYS Vless None TLS \e[0m: $status_nontls_vless"
-echo -e "\e[1;32m XRAYS Trojan         \e[0m: $status_virus_trojan"
 echo -e "\e[1;32m Websocket TLS        \e[0m: $swstls"
 echo -e "\e[1;32m Websocket None TLS   \e[0m: $swstls"
 echo -e "\e[1;33m -------------------------------------------------\e[0m"
