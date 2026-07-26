@@ -175,7 +175,6 @@ cd
 mkdir /home/vps
 mkdir /home/vps/public_html
 wget -O /home/vps/public_html/index.html "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/ssh/index"
-wget -O /home/vps/public_html/.htaccess "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/ssh/.htaccess"
 mkdir /home/vps/public_html/ss-ws
 mkdir /home/vps/public_html/clash-ws
 # install badvpn
