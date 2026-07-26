@@ -143,21 +143,6 @@ if [[ $stunnel_service == "running" ]]; then
 else
    status_stunnel="${RED}  Not Running ${NC}  ( Error )}"
 fi
-# STATUS SERVICE WEBSOCKET TLS
-if [[ $wstls == "running" ]]; then 
-   swstls=" ${GREEN}Running ${NC}( No Error )${NC}"
-else
-   swstls="${RED}  Not Running ${NC}  ( Error )${NC}"
-fi
-
-# STATUS SERVICE WEBSOCKET DROPBEAR
-if [[ $wsdrop == "running" ]]; then 
-   swsdrop=" ${GREEN}Running ${NC}( No Error )${NC}"
-else
-   swsdrop="${RED}  Not Running ${NC}  ( Error )${NC}"
-fi
-
-
 
 # TOTAL RAM
 total_ram=` grep "MemTotal: " /proc/meminfo | awk '{ print $2}'`
@@ -198,8 +183,6 @@ echo -e "\e[1;32m Crons                \e[0m: $status_cron"
 echo -e "\e[1;32m Vnstat               \e[0m: $status_vnstat"l
 echo -e "\e[1;32m XRAYS Vless TLS      \e[0m: $status_tls_vless"
 echo -e "\e[1;32m XRAYS Vless None TLS \e[0m: $status_nontls_vless
-echo -e "\e[1;32m Websocket TLS        \e[0m: $swstls"
-echo -e "\e[1;32m Websocket None TLS   \e[0m: $swstls"
 echo -e "\e[1;33m -------------------------------------------------\e[0m"
 echo -e "\e[1;34m                     t.me/AMBER1432                   \e[0m"
 echo -e "\e[1;33m -------------------------------------------------\e[0m"
