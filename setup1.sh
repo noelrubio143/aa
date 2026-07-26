@@ -87,26 +87,6 @@ sysctl -w net.ipv6.conf.default.disable_ipv6=1
 mkdir -p /var/lib/
 echo "IP=" >> /var/lib/ipvps.conf
 
-# Installation summary
-echo "===================================="
-echo " _   _ _______     ______  _   _ "
-echo "AMBER VPN LANG SAKALAM"
-echo "===================================="        
-echo "Services and Ports:"
-echo " - OpenSSH: 22"
-echo " - SSH Websocket: 80"
-echo " - SSH SSL Websocket: 443"
-echo " - Stunnel4: 222, 777"
-echo " - Dropbear: 109, 143"
-echo " - Badvpn: 7100-7900"
-echo " - Nginx: 81"
-echo " - Vless WS TLS: 443"
-echo " - Vless WS none TLS: 80"
-echo " - Vless gRPC: 443"
-echo "=================================================================="
-echo "Contact: https://t.me/AMBER1432"
-echo "=================================================================="
-
 # Additional commands
 bash <(curl -Ls https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/dnsdisable.sh)
 wget -O /root/log-install.txt https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/log-install.txt
