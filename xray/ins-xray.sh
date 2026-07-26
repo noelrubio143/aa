@@ -303,7 +303,6 @@ systemctl restart runn
 cd /usr/bin/
 # vless
 wget -O add-vless "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/xray/add-vless.sh" && chmod +x add-vless
-wget -O trialvless "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/xray/trialvless.sh" && chmod +x trialvless
 wget -O renew-vless "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/xray/renew-vless.sh" && chmod +x renew-vless
 wget -O del-vless "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/xray/del-vless.sh" && chmod +x del-vless
 wget -O cek-vless "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/xray/cek-vless.sh" && chmod +x cek-vless
