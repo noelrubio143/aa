@@ -325,6 +325,7 @@ wget -O m-vmess "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/ma
 wget -O m-vless "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/menu/m-vless.sh"
 wget -O running "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/menu/running.sh"
 wget -O clearcache " https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/menu/clearcache.sh"
+wget -O m-trojan "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/menu/m-trojan.sh"
 
 # menu ssh ovpn
 wget -O m-sshovpn "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/menu/m-sshovpn.sh"
@@ -359,6 +360,7 @@ chmod +x m-vmess
 chmod +x m-vless
 chmod +x running
 chmod +x clearcache
+chmod +x m-trojan
 
 chmod +x m-sshovpn
 chmod +x usernew
