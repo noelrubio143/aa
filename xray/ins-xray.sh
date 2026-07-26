@@ -305,7 +305,6 @@ cd /usr/bin/
 wget -O add-vless "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/xray/add-vless.sh" && chmod +x add-vless
 wget -O renew-vless "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/xray/renew-vless.sh" && chmod +x renew-vless
 wget -O del-vless "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/xray/del-vless.sh" && chmod +x del-vless
-wget -O cek-vless "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/xray/cek-vless.sh" && chmod +x cek-vless
 
 sleep 0.5
 yellow() { echo -e "\\033[33;1m${*}\\033[0m"; }
