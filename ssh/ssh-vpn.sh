@@ -369,7 +369,6 @@ chmod +x delete
 chmod +x autokill
 chmod +x ceklim
 chmod +x tendang
-chmod +x sshws
 chmod +x user-lock
 chmod +x user-unlock
 
@@ -383,7 +382,6 @@ chmod +x restart
 chmod +x bw
 chmod +x m-tcp
 chmod +x xp
-chmod +x sshws
 chmod +x m-dns
 cd
 
