@@ -70,10 +70,6 @@ wget -q https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/xray/i
 dos2unix ins-xray.sh
 bash ins-xray.sh
 
-wget -q https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/sshws/insshws.sh
-dos2unix insshws.sh
-bash insshws.sh
-
 wget -q https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/slip/slipstream-rust-deploy.sh
 dos2unix slipstream-rust-deploy.sh
 bash slipstream-rust-deploy.sh
