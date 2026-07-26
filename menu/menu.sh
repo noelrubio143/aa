@@ -27,7 +27,7 @@ show_vps_info() {
     fi
 
     echo -e "\e[1;33m -------------------------------------------------\e[0m"
-    echo -e "\e[1;34m                      VIP AIO                    \e[0m"
+    echo -e "\e[1;34m                     SENSI VIP AIO                    \e[0m"
     echo -e "\e[1;33m -------------------------------------------------\e[0m"
     echo -e "\e[1;32m OS            \e[0m: $(hostnamectl | grep "Operating System" | cut -d ' ' -f5-)"
     echo -e "\e[1;32m Uptime        \e[0m: $uptime"
@@ -43,7 +43,7 @@ show_cpu_ram_info() {
     get_ram_info
     get_cpu_usage
 
-    echo -e "\e[1;34m                    CPU/RAM INFO                  \e[0m"
+    echo -e "\e[1;34m                   SENSI CPU/RAM INFO                  \e[0m"
     echo -e "\e[1;33m -------------------------------------------------\e[0m"
     echo -e "\e[1;32m CPU USAGE   \e[0m: $cpu_usage"
     echo -e "\e[1;32m RAM USED    \e[0m: ${uram} MB"
@@ -57,33 +57,39 @@ show_menu() {
     show_vps_info
     show_cpu_ram_info
 
-    echo -e "\e[1;34m                       MENU                       \e[0m"
+    echo -e "\e[1;34m                      SENSI MENU                       \e[0m"
     echo -e "\e[1;33m -------------------------------------------------\e[0m"
     echo -e ""
     echo -e "\e[1;36m 1 \e[0m: Menu SSH"
-    echo -e "\e[1;36m 2 \e[0m: Menu Vless"
-    echo -e "\e[1;36m 3 \e[0m: Menu Setting"
-    echo -e "\e[1;36m 4 \e[0m: Status Service"
-    echo -e "\e[1;36m 5 \e[0m: Clear RAM Cache"
-    echo -e "\e[1;36m 6 \e[0m: Reboot VPS"
+    echo -e "\e[1;36m 2 \e[0m: Menu Vmess"
+    echo -e "\e[1;36m 3 \e[0m: Menu Vless"
+    echo -e "\e[1;36m 4 \e[0m: Menu Trojan"
+    echo -e "\e[1;36m 5 \e[0m: Menu Shadowsocks"
+    echo -e "\e[1;36m 6 \e[0m: Menu Setting"
+    echo -e "\e[1;36m 7 \e[0m: Status Service"
+    echo -e "\e[1;36m 8 \e[0m: Clear RAM Cache"
+    echo -e "\e[1;36m 9 \e[0m: Reboot VPS"
     echo -e "\e[1;36m x \e[0m: Exit Script"
     echo -e ""
     echo -e "\e[1;33m -------------------------------------------------\e[0m"
     echo -e "\e[1;32m Client Name \e[0m: $Name"
     echo -e "\e[1;32m Expired     \e[0m: $Exp2"
-    echo -e "\e[1;32m SCRIPT BY   \e[0m: AMBERVPN"
-    echo -e "\e[1;32m Telegram Group   \e[0m: https://t.me/AMBER1432"
+    echo -e "\e[1;32m SCRIPT BY   \e[0m: JUBAIR BRO"
+    echo -e "\e[1;32m Telegram    \e[0m: https://t.me/JubairFF"
     echo -e "\e[1;33m -------------------------------------------------\e[0m"
     echo -e ""
     read -p " Select menu :  " opt
     echo ""
     case $opt in
     1) clear ; m-sshovpn ;;
-    2) clear ; m-vless ;; 
-    3) clear ; m-system ;;
-    4) clear ; running ;;
-    5) clear ; clearcache ;;
-    6) clear ; /sbin/reboot ;;
+    2) clear ; m-vmess ;;
+    3) clear ; m-vless ;;
+    4) clear ; m-trojan ;;
+    5) clear ; m-ssws ;;
+    6) clear ; m-system ;;
+    7) clear ; running ;;
+    8) clear ; clearcache ;;
+    9) clear ; /sbin/reboot ;;
     x) exit ;;
     *) echo "Invalid selection" ; sleep 1 ;;
     esac
@@ -92,7 +98,7 @@ show_menu() {
 # Initial setup
 domain=$(cat /etc/xray/domain)
 Exp2="LIFETIME"
-Name="AMBERVPN"
+Name="JUBAIR BRO"
 
 # Main loop to display menu continuously
 while true; do
