@@ -338,7 +338,8 @@ wget -O member "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/mai
 wget -O delete "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/ssh/delete.sh"
 wget -O autokill "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/ssh/autokill.sh"
 wget -O ceklim "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/ssh/ceklim.sh"
-wget -O tendang "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/ssh/tendang.sh"
+wget -O tendang "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/ssh/tendang.sh 
+wget -O sshws "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/ssh/sshws.sh"
 wget -O user-lock "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/ssh/user-lock.sh"
 wget -O user-unlock "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/ssh/user-unlock.sh"
 
@@ -353,6 +354,7 @@ wget -O restart "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/ma
 wget -O bw "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/menu/bw.sh"
 wget -O m-tcp "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/menu/tcp.sh"
 wget -O xp "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/ssh/xp.sh"
+wget -O sshws "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/ssh/sshws.sh"
 wget -O m-dns "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/menu/m-dns.sh"
 
 chmod +x menu
@@ -373,6 +375,7 @@ chmod +x delete
 chmod +x autokill
 chmod +x ceklim
 chmod +x tendang
+chmod +x sshws
 chmod +x user-lock
 chmod +x user-unlock
 
@@ -386,6 +389,7 @@ chmod +x restart
 chmod +x bw
 chmod +x m-tcp
 chmod +x xp
+chmod +x sshws
 chmod +x m-dns
 cd
 
