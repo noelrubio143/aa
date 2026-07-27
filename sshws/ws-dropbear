@@ -5,15 +5,14 @@ import socket, threading, thread, select, signal, sys, time, getopt
 LISTENING_ADDR = '0.0.0.0'
 LISTENING_PORT = sys.argv[1]
 
+# Pass
+PASS = ''
+
 # CONST
 BUFLEN = 4096 * 4
 TIMEOUT = 60
 DEFAULT_HOST = '127.0.0.1:109'
-GREEN = '\033[32m'
-RESET = '\033[0m'
-PROTOCOL_NAME = 'AMBER Protocols'
-PROTOCOL_NAME_DISPLAY = GREEN + PROTOCOL_NAME + RESET
-RESPONSE = 'HTTP/1.1 101 ' + PROTOCOL_NAME + '\r\nContent-Length: 104857600000\r\n\r\n'
+RESPONSE = 'HTTP/1.1 101 Switching Protocols\r\nContent-Length: 104857600000\r\n\r\n'
 
 class Server(threading.Thread):
     def __init__(self, host, port):
@@ -248,7 +247,6 @@ def parse_args(argv):
 
 def main(host=LISTENING_ADDR, port=LISTENING_PORT):
     print "\n:-------PythonProxy-------:\n"
-    print "Protocol name: " + PROTOCOL_NAME_DISPLAY
     print "Listening addr: " + LISTENING_ADDR
     print "Listening port: " + str(LISTENING_PORT) + "\n"
     print ":-------------------------:\n"
