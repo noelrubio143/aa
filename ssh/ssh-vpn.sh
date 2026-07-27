@@ -317,7 +317,13 @@ cd /usr/bin
 # menu
 wget -O menu "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/menu/menu.sh"
 wget -O m-vless "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/menu/m-vless.sh"
+wget -O running "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/menu/running.sh"
 wget -O clearcache "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/menu/clearcache.sh"
+
+# menu ssh ovpn
+wget -O m-sshovpn "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/menu/m-sshovpn.sh"
+wget -O usernew "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/ssh/usernew.sh"
+wget -O delete "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/ssh/delete.sh"
 
 # menu system
 wget -O m-system "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/menu/m-system.sh"
@@ -333,7 +339,12 @@ wget -O m-dns "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main
 
 chmod +x menu
 chmod +x m-vless
+chmod +x running
 chmod +x clearcache
+
+chmod +x m-sshovpn
+chmod +x usernew
+chmod +x delete
 
 chmod +x m-system
 chmod +x m-domain
