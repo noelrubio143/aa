@@ -328,7 +328,8 @@ wget -O clearcache "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads
 # menu ssh ovpn
 wget -O m-sshovpn "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/menu/m-sshovpn.sh"
 wget -O usernew "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/ssh/usernew.sh"
-wget -O delete "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/ssh/delete.sh"
+wget -O hapus "https://codeberg.org/babayega/vpsscript/raw/branch/main/ssh/hapus.sh"
+wget -O member "https://codeberg.org/babayega/vpsscript/raw/branch/main/ssh/member.sh"
 
 # menu system
 wget -O m-system "https://raw.githubusercontent.com/noelrubio143/aa/refs/heads/main/menu/m-system.sh"
@@ -349,7 +350,8 @@ chmod +x clearcache
 
 chmod +x m-sshovpn
 chmod +x usernew
-chmod +x delete
+chmod +x hapus
+chmod +x member
 
 chmod +x m-system
 chmod +x m-domain
